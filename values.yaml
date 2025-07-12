@@ -257,19 +257,12 @@ socketio:
 persistence:
   worker:
     enabled: true
-    # existingClaim: ""
-    size: 8Gi
-    # storageClass: "nfs"
-    accessModes:
-    - ReadWriteMany
+    size: 20Gi
+    storageClass: "efs-sc"
   logs:
-    # Container based log search and analytics stack recommended
     enabled: false
-    # existingClaim: ""
-    size: 8Gi
-    # storageClass: "nfs"
-    accessModes:
-    - ReadWriteMany
+    size: 20Gi
+    storageClass: "efs-sc"
 
 # Ingress
 ingress:
