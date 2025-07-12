@@ -14,7 +14,7 @@ dbRootPassword: "avaya1"
 image:
   repository: k00tz/first_image
   tag: latest
-  pullPolicy: always
+  pullPolicy: Always
 
 nginx:
   replicaCount: 1
