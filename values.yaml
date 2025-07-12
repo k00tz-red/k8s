@@ -259,10 +259,12 @@ persistence:
     enabled: true
     size: 20Gi
     storageClass: "efs-sc"
+    accessModes: ReadWriteOnce
   logs:
     enabled: false
     size: 20Gi
     storageClass: "efs-sc"
+    accessModes: ReadWriteOnce
 
 # Ingress
 ingress:
